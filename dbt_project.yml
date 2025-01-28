@@ -2,9 +2,12 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'jaffle_shop'
+name: 'altice_bq_poc'
 version: '1.0.0'
 config-version: 2
+
+dbt-cloud:
+    project-id: 391306
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
@@ -36,6 +39,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  jaffle_shop:
+  altice_bq_poc:
     +materialized: table
 
